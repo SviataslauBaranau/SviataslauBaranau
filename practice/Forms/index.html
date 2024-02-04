@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Формы</title>
+</head>
+
+<body>
+    <h1>Форма завки на работу в зоопарке</h1>
+    <p><em>Пожалуйста, заполните форму. обязательные поля помечены *</em></p>
+    <form name="resume" method="post" action="http://fe.it-academy.by/TestForm.php">
+
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label>Имя
+                <input type="text" name="name" id="name" required><br>
+            </label>
+            <label>Телефон
+                <input type="text" name="phone" id="phone" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" autocomplete="off" required><br>
+            </label>
+            <input type="text" name="email" id="email" value="Email*"
+                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <input type="number" name="age" id="age" value="Возраст*" pattern="[0-9]{18,60}" required><br>
+            <input type="text" name="sex" id="sex" value="Пол">
+            <select name="sex" id="sex">
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+                <option value="female">Неважно</option>
+            </select><br>
+            <input type="text" name="qualities" id="qualities" value="Перечислите личные качества">
+            <textarea name="qualities" value="Перечислите личные качества" cols="30" rows="10"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <label>
+                <input type="checkbox" name="check1" value="zebra">Зебра
+            </label>
+            <label>
+                <input type="checkbox" name="check2" value="cat">Кошак
+            </label>
+            <label>
+                <input type="checkbox" name="check3" value="anaconda">Анаконда
+            </label>
+            <label>
+                <input type="checkbox" name="check4" value="human">Человек<br>
+            </label>
+            <label>
+                <input type="checkbox" name="check5" value="elephant">Слон
+            </label>
+            <label>
+                <input type="checkbox" name="check6" value="antilope">Антилопа
+            </label>
+            <label>
+                <input type="checkbox" name="check7" value="dove">Голубь
+            </label>
+            <label>
+                <input type="checkbox" name="check8" value="crab">Краб
+            </label>
+        </fieldset>
+        <label>
+            <input type="checkbox" name="personal data" value="consent">Я согласен(-на) на обработку моих персональных данных, указанных в данной анкете. С <a href="consent_info.html" target="_blank">информацией об обработке персональных данных, моих правах и механизме их реализации</a> ознакомлен(-а).
+        </label><br>
+        <input type="submit" value="Отправить информацию">
+    </form>
+</body>
+</html>
