@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Codes</title>
+    <style>
+        ul.list1 {
+            width: 350px;
+            list-style-type: upper-roman;
+        }
+
+        ul.list2 {
+            width: 350px;
+            list-style-type: lower-roman;
+        }
+
+        div {
+            background-color: black;
+            width: 400px;
+            max-height: 75px;
+            overflow: auto;
+        }
+
+        code {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ul class="list1">
+        <li><strong>Контейнер с кодом</strong>
+            <ul class="list2">
+            <li>Цвет фона: черный</li>
+            <li>Цвет текста: зеленый</li>
+            <li>Ширина: 400px</li>
+            <li>Максимальная ширина контейнера: 4-е строки</li>
+            <li>Переполнение: автоматическое</li>
+            </ul>
+        </li>
+        <li><strong>Список</strong>
+            <ul class="list2">
+            <li>Ширина: 350px</li>
+            <li>Тип списка: римские цифры</li>
+            <li>Тип вложенного списка: римские нижний регистр цифры</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>
+        <code>#!/usr/bin/env python</code><br>
+        <code>print 'Hello. I am a python program.'</code><br>
+        <code>name = raw_input ("What is your name&")</code><br>
+        <code>print "Hello there, " + "name + "!"</code><br>
+        <code>Python is the snakes' code.</code><br>
+        <code>Python will finally kill Java...</code><br>
+        <code>and Jawas too.</code><br>
+        <code>It will finidh what Darth Vader started.</code>
+    </div>
+
+</body>
+
+</html>
