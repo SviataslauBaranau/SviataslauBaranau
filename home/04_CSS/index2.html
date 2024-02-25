@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        td{
+            border-bottom-style:dotted;
+            border-right-style:dotted;
+        }
+
+        .data{
+            border-right-style: none;
+        }
+
+        p{
+            text-align:center;
+        }
+
+        tr.string>td{
+            background-color:lightgray;
+        }
+
+        tr:hover{
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table align="center">
+        <tr class="string">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr>
+            <td><strong>Иванов Иван Иванович</strong></td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td class="data">4353</td>
+        </tr>
+        <tr class="string">
+            <td><strong>Петровна Илона Петровна</strong></td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td class="data">46523</td>
+        </tr>
+        <tr>
+            <td><strong>Сидоров Илья Игоревич</strong></td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td class="data">987979</td>
+        </tr>
+        <tr class="string">
+            <td><strong>Пупин Фёдор Фёдорович</strong></td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td class="data">9232379</td>
+        </tr>
+        <tr>
+            <td><strong>Крупин Сергей Иванович</strong></td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td class="data">922123379</td>
+        </tr>
+    </table>
+
+    <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+
+
+</body>
+</html>
