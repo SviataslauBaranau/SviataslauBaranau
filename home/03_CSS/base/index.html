@@ -8,37 +8,80 @@
 
     <style>
         .day {
+            width: 11%;
             background-color: lightgray;
+            border: 1px solid black; 
+            float: left;
 
         }
 
-        .clear{
+        .wednesday {
+            width: 11%;
+            background-color: lightgray;
+            border: 1px solid black; 
+            float: left;
+
+        }
+
+        .clear {
             clear: both;
         }
 
-        .food{
+        .food {
+            width: 100%;
             background-color: darkgray;
+            border: 1px solid black;
+            float: none; 
         }
 
+        @media all and (max-width: 839px){
+            
+            .day {
+            width: 20%;
+            background-color: lightgray;
+            border: 1px solid black; 
+            float: none;
+        }
+
+        .wednesday {
+            width: 20%;
+            background-color: lightgray;
+            border: 1px solid black; 
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .food {
+            width: 100%;
+            background-color: darkgray;
+            border: 1px solid black;
+            float: left; 
+        }  
+        }
+    
     </style>
 </head>
 
 <body>
 
-<div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: left">Понедельник</div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: left">Вторник</div>
-   <div class="day" style="width: 250px; border: 1px solid black; float:left">Среда
-    <div class="food" style="width: 250px; border: 1px solid black; float:left">Завтрак</div>
-    <div class="food" style="width: 250px; border: 1px solid black; float:left">Обед</div>
-    <div class="food" style="width: 250px; border: 1px solid black; float:left">Ужин</div>
-</div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: right">Воскресенье</div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: right">Суббота</div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: right">Пятница</div>
-   <div class="day" style="width: 220px; border: 1px solid black; float: right">Четверг</div>
-   <div class="clear"></div>
-</div>
+    <div>
+        <div class="day">Понедельник</div>
+        <div class="day">Вторник</div>
+        <div class="wednesday">Среда
+            <div class="food">Завтрак</div>
+            <div class="food">Обед</div>
+            <div class="food">Ужин</div>
+        </div>
+        <div class="day">Четверг</div>
+        <div class="day">Пятница</div>
+        <div class="day">Суббота</div>
+        <div class="day">Воскресенье</div>
+        <div class="clear"></div>
+    </div>
 
 </body>
+
 </html>
